@@ -1,0 +1,32 @@
+{
+  "devDependencies": {
+    "@types/node": "^20.12.11",
+    "typescript": "^5.4.5"
+  },
+  "type": "module",
+  "scripts": {
+    "compile": "tsc",
+    "start": "npm run compile && nodemon --env-file=.env ./dist/index.js",
+    "start-tsx": "npm run compile && node --watch --import=tsx --env-file=.env ./dist/index.js"
+
+  },
+  "name": "graphql_mongodb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "@apollo/server": "^4.10.4",
+    "dotenv": "^16.4.5",
+    "graphql": "^16.8.1",
+    "graphql-scalars": "^1.23.0",
+    "mongodb": "^6.6.1",
+    "mongoose": "^8.3.4",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.10.2",
+    "undici-types": "^5.26.5"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
